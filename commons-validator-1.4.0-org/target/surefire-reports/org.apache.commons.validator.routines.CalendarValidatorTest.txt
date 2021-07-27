@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.validator.routines.CalendarValidatorTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 1, Skipped: 0, Time elapsed: 0.01 sec <<< FAILURE!
+testFormat(org.apache.commons.validator.routines.CalendarValidatorTest)  Time elapsed: 0.001 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: default expected:<31/12/[]05> but was:<31/12/[20]05>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at org.apache.commons.validator.routines.CalendarValidatorTest.testFormat(CalendarValidatorTest.java:210)
+testCalendarValidatorMethods(org.apache.commons.validator.routines.CalendarValidatorTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "java.util.Calendar.getTime()" because the return value of "org.apache.commons.validator.routines.CalendarValidator.validate(String, String, java.util.Locale)" is null
+	at org.apache.commons.validator.routines.CalendarValidatorTest.testCalendarValidatorMethods(CalendarValidatorTest.java:69)
+testDateTimeStyle(org.apache.commons.validator.routines.CalendarValidatorTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: validate(A) default
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at org.apache.commons.validator.routines.CalendarValidatorTest.testDateTimeStyle(CalendarValidatorTest.java:193)

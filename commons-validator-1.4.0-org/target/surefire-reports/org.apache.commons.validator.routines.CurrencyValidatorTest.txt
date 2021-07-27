@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.validator.routines.CurrencyValidatorTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec <<< FAILURE!
+testInvalid(org.apache.commons.validator.routines.CurrencyValidatorTest)  Time elapsed: 0.007 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: US wrong negative
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertFalse(Assert.java:34)
+	at org.apache.commons.validator.routines.CurrencyValidatorTest.testInvalid(CurrencyValidatorTest.java:119)
+testIntegerValid(org.apache.commons.validator.routines.CurrencyValidatorTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: US negative expected:<-1234.00> but was:<null>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at org.apache.commons.validator.routines.CurrencyValidatorTest.testIntegerValid(CurrencyValidatorTest.java:140)
+testValid(org.apache.commons.validator.routines.CurrencyValidatorTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: US negative expected:<-1234.56> but was:<null>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:280)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at org.apache.commons.validator.routines.CurrencyValidatorTest.testValid(CurrencyValidatorTest.java:91)

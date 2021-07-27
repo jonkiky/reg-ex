@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.validator.EntityImportTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+testEntityImport(org.apache.commons.validator.EntityImportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoSuchMethodError: org.apache.commons.collections.ArrayStack: method 'void <init>(int)' not found
+	at org.apache.commons.digester.Digester.<init>(Digester.java:155)
+	at org.apache.commons.digester.xmlrules.FromXmlRuleSet.<init>(FromXmlRuleSet.java:60)
+	at org.apache.commons.digester.xmlrules.DigesterLoader.createDigester(DigesterLoader.java:78)
+	at org.apache.commons.validator.ValidatorResources.initDigester(ValidatorResources.java:261)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:199)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:180)
+	at org.apache.commons.validator.EntityImportTest.testEntityImport(EntityImportTest.java:39)
+testParseURL(org.apache.commons.validator.EntityImportTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoSuchMethodError: org.apache.commons.collections.ArrayStack: method 'void <init>(int)' not found
+	at org.apache.commons.digester.Digester.<init>(Digester.java:155)
+	at org.apache.commons.digester.xmlrules.FromXmlRuleSet.<init>(FromXmlRuleSet.java:60)
+	at org.apache.commons.digester.xmlrules.DigesterLoader.createDigester(DigesterLoader.java:78)
+	at org.apache.commons.validator.ValidatorResources.initDigester(ValidatorResources.java:261)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:240)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:221)
+	at org.apache.commons.validator.EntityImportTest.testParseURL(EntityImportTest.java:48)

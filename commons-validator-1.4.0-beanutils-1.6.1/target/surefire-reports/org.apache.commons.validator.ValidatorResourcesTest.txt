@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.validator.ValidatorResourcesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+testNullInputStream(org.apache.commons.validator.ValidatorResourcesTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoSuchMethodError: org.apache.commons.collections.ArrayStack: method 'void <init>(int)' not found
+	at org.apache.commons.digester.Digester.<init>(Digester.java:155)
+	at org.apache.commons.digester.xmlrules.FromXmlRuleSet.<init>(FromXmlRuleSet.java:60)
+	at org.apache.commons.digester.xmlrules.DigesterLoader.createDigester(DigesterLoader.java:78)
+	at org.apache.commons.validator.ValidatorResources.initDigester(ValidatorResources.java:261)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:157)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:137)
+	at org.apache.commons.validator.ValidatorResourcesTest.testNullInputStream(ValidatorResourcesTest.java:43)

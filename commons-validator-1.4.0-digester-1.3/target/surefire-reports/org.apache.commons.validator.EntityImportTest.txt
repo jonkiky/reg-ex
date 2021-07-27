@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.validator.EntityImportTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE!
+testEntityImport(org.apache.commons.validator.EntityImportTest)  Time elapsed: 0.001 sec  <<< ERROR!
+org.apache.commons.digester.xmlrules.XmlLoadException: Invalid byte 2 of 2-byte UTF-8 sequence.
+	at org.apache.commons.digester.xmlrules.FromXmlRuleSet.addRuleInstances(FromXmlRuleSet.java:139)
+	at org.apache.commons.digester.Digester.addRuleSet(Digester.java:1610)
+	at org.apache.commons.digester.xmlrules.DigesterLoader.createDigester(DigesterLoader.java:89)
+	at org.apache.commons.validator.ValidatorResources.initDigester(ValidatorResources.java:261)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:199)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:180)
+	at org.apache.commons.validator.EntityImportTest.testEntityImport(EntityImportTest.java:39)
+testParseURL(org.apache.commons.validator.EntityImportTest)  Time elapsed: 0.003 sec  <<< ERROR!
+org.apache.commons.digester.xmlrules.XmlLoadException: Invalid byte 2 of 2-byte UTF-8 sequence.
+	at org.apache.commons.digester.xmlrules.FromXmlRuleSet.addRuleInstances(FromXmlRuleSet.java:139)
+	at org.apache.commons.digester.Digester.addRuleSet(Digester.java:1610)
+	at org.apache.commons.digester.xmlrules.DigesterLoader.createDigester(DigesterLoader.java:89)
+	at org.apache.commons.validator.ValidatorResources.initDigester(ValidatorResources.java:261)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:240)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:221)
+	at org.apache.commons.validator.EntityImportTest.testParseURL(EntityImportTest.java:48)

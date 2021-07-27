@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.validator.ValidatorResourcesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE!
+testNullInputStream(org.apache.commons.validator.ValidatorResourcesTest)  Time elapsed: 0.003 sec  <<< ERROR!
+org.apache.commons.digester.xmlrules.XmlLoadException: Invalid byte 2 of 2-byte UTF-8 sequence.
+	at org.apache.commons.digester.xmlrules.FromXmlRuleSet.addRuleInstances(FromXmlRuleSet.java:139)
+	at org.apache.commons.digester.Digester.addRuleSet(Digester.java:1610)
+	at org.apache.commons.digester.xmlrules.DigesterLoader.createDigester(DigesterLoader.java:89)
+	at org.apache.commons.validator.ValidatorResources.initDigester(ValidatorResources.java:261)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:157)
+	at org.apache.commons.validator.ValidatorResources.<init>(ValidatorResources.java:137)
+	at org.apache.commons.validator.ValidatorResourcesTest.testNullInputStream(ValidatorResourcesTest.java:43)
